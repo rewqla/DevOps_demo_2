@@ -16,8 +16,7 @@ resource "aws_ecs_cluster" "my_cluster" {
   name = "app-cluster" # Name your cluster here
 }
 provider "aws" {
-  region  = "eu-north-1" 
-  #  region  = "us-east-1" 
+   region  = "us-east-1"
 }
 
 resource "aws_iam_role" "ecsTaskExecutionRole" {
